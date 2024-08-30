@@ -39,7 +39,6 @@ You can always create a branch in {% data variables.product.prodname_desktop %} 
    ![Screenshot of the "Current Branch" dropdown view. Next to the "Filter" field, a button, labeled "New Branch", is outlined in orange.](/assets/images/help/desktop/new-branch-button-mac.png)
 
 {% data reusables.desktop.name-branch %}
-{% data reusables.desktop.select-base-branch %}
 {% data reusables.desktop.confirm-new-branch-button %}
 
 ## Creating a branch from a previous commit
