@@ -25,14 +25,6 @@ Once you're satisfied with your work, you can create a pull request to merge you
 
 You can always create a branch in {% data variables.product.prodname_desktop %} if you have read access to a repository, but you can only push the branch to {% data variables.product.prodname_dotcom %} if you have write access to the repository.
 
-{% data reusables.desktop.protected-branches %}
-
-{% ifversion repo-rules %}
-
-Repository administrators can also enable rulesets. Rulesets can be used to require specific branch names when creating a new branch, or to allow only users with bypass permissions to publish a new branch to the remote repository. {% data variables.product.prodname_desktop %} will show a warning and prevent the branch from being created if the branch does not follow the rulesets. For more information, see "[AUTOTITLE](/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)."
-
-{% endif %}
-
 ## Creating a branch
 
 {% tip %}
@@ -47,7 +39,6 @@ Repository administrators can also enable rulesets. Rulesets can be used to requ
    ![Screenshot of the "Current Branch" dropdown view. Next to the "Filter" field, a button, labeled "New Branch", is outlined in orange.](/assets/images/help/desktop/new-branch-button-mac.png)
 
 {% data reusables.desktop.name-branch %}
-{% data reusables.desktop.select-base-branch %}
 {% data reusables.desktop.confirm-new-branch-button %}
 
 ## Creating a branch from a previous commit
@@ -71,7 +62,11 @@ If you create a branch on {% data variables.product.product_name %}, you'll need
 
 ## Switching between branches
 
-You can view and make commits to any of your repository's branches. If you have uncommitted, saved changes, you'll need to decide what to do with your changes before you can switch branches. You can commit your changes on the current branch, stash your changes to temporarily save them on the current branch, or bring the changes to your new branch. If you want to commit your changes before switching branches, see "[AUTOTITLE](/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop)."
+You can view and make commits to any of your repository's branches. 
+
+> **Note**: If you have uncommitted, saved changes, you'll need to decide what to do with your changes before you can switch branches. You can commit your changes on the current branch, stash your changes to temporarily save them on the current branch, or bring the changes to your new branch. 
+
+If you want to commit your changes before switching branches, see "[AUTOTITLE](/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop)."
 {% tip %}
 
 **Tip**: You can set a default behavior for switching branches in the **Prompts** settings. For more information, see "[AUTOTITLE](/desktop/configuring-and-customizing-github-desktop/configuring-basic-settings-in-github-desktop)."
@@ -84,7 +79,9 @@ You can view and make commits to any of your repository's branches. If you have 
 
 ## Deleting a branch
 
-You can't delete a branch if it's currently associated with an open pull request. You cannot undo deleting a branch.
+You can't delete a branch if it's currently associated with an open pull request. 
+
+**Note**: You cannot undo deleting a branch.
 
 {% mac %}
 
